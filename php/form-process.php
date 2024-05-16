@@ -23,10 +23,11 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-$EmailTo = "dolfean214@gmail.com";  // Update this to your desired recipient email address
+// Recipient email address
+$EmailTo = "example@domain.com";  // Update this to your desired recipient email address
 $Subject = "New Message Received";
 
-// prepare email body text
+// Prepare email body text
 $Body = "";
 $Body .= "Name: ";
 $Body .= $name;
@@ -38,14 +39,14 @@ $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
 
-// send email
+// Send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
 
-// redirect to success page
+// Check if email was sent successfully
 if ($success && $errorMSG == ""){
     echo "success";
 } else {
-    if($errorMSG == ""){
+    if ($errorMSG == ""){
         echo "Something went wrong :(";
     } else {
         echo $errorMSG;
