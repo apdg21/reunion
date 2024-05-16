@@ -508,60 +508,50 @@
         <!-- Start Events -->         
         <!-- End Events -->         
         <!-- Start Contact -->         
-        <div id="contact" class="contact-box"> 
-            <div class="container"> 
-                <div class="row"> 
-                    <div class="col-lg-12"> 
-                        <div class="title-box"> 
-                            <h2>Share Your Heart: Leave Your Legacy in Our Family Reunion Guestbook</h2> 
-                            <p>As we come together to celebrate the ties that bind us, we invite you to share your thoughts, memories, and wishes in our family reunion guestbook. Whether it&apos;s a cherished story from the past, a heartfelt message for the future, or simply a word of love and connection, your words will become part of the rich tapestry of our family history. Let your voice echo through the generations as we create new memories under the sheltering branches of our shared heritage.</p> 
-                        </div>                         
-                    </div>                     
-                </div>                 
-                <div class="row"> 
-                    <div class="col-lg-12 col-sm-12 col-xs-12"> 
-                        <div class="contact-block"> 
-                            <form id="contactForm"> 
-                                <div class="row"> 
-                                    <div class="col-md-6"> 
-                                        <div class="form-group"> 
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name"> 
-                                            <div class="help-block with-errors"></div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="col-md-6"> 
-                                        <div class="form-group"> 
-                                            <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email"> 
-                                            <div class="help-block with-errors"></div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="col-md-6"> 
-                                        <div class="form-group"> 
-                                            <div class="help-block with-errors"></div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="col-md-6"> 
-                                        <div class="form-group"> 
-                                            <div class="help-block with-errors"></div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="col-md-12"> 
-                                        <div class="form-group"> 
-                                            <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea> 
-                                            <div class="help-block with-errors"></div>                                             
-                                        </div>                                         
-                                        <div class="submit-button text-center"> 
-                                            <button class="btn btn-common" id="submit" type="submit">Send Message</button>                                             
-                                            <div id="msgSubmit" class="h3 text-center hidden"></div>                                             
-                                            <div class="clearfix"></div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                </div>                                 
-                            </form>                             
-                        </div>                         
-                    </div>                     
-                </div>                 
-            </div>             
+        <div id="contact" class="contact-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title-box">
+                            <h2>Share Your Heart: Leave Your Legacy in Our Family Reunion Guestbook</h2>
+                            <p>As we come together to celebrate the ties that bind us, we invite you to share your thoughts, memories, and wishes in our family reunion guestbook. Whether it's a cherished story from the past, a heartfelt message for the future, or simply a word of love and connection, your words will become part of the rich tapestry of our family history. Let your voice echo through the generations as we create new memories under the sheltering branches of our shared heritage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <div class="contact-block">
+                            <form id="contactForm" action="process_form.php" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="submit-button text-center">
+                                            <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>         
         <!-- End Contact -->         
         <!-- Start Footer -->         
