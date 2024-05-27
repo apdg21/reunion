@@ -1,0 +1,32 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 10/07/2018 06:45
+  	*/
+
+@font-face {
+font-family: "Flaticon";
+	src: url("https://cdn.shopify.com/s/files/1/0675/8904/6554/files/Flaticon.eot?v=1715148494");
+	src: url("https://cdn.shopify.com/s/files/1/0675/8904/6554/files/Flaticon.eot?v=1715148494") format("embedded-opentype"),
+	url("https://cdn.shopify.com/s/files/1/0675/8904/6554/files/Flaticon.woff?v=1715148494") format("woff"),
+	url("https://cdn.shopify.com/s/files/1/0675/8904/6554/files/Flaticon.ttf?v=1715148494") format("truetype"),
+	url("https://raw.githubusercontent.com/Jean-42/888-001/ef9320295e3988f58929110fb80676a4aef26660/fonts/Flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: "Flaticon";
+		src: url("https://raw.githubusercontent.com/Jean-42/888-001/ef9320295e3988f58929110fb80676a4aef26660/fonts/Flaticon.svg") format("svg");
+	}
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+	font-style: normal;
+}
+
+.flaticon-reception-bell:before { content: "\f100"; }
+.flaticon-wedding:before { content: "\f101"; }
+.flaticon-bachelorette-party:before { content: "\f102"; }
