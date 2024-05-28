@@ -9,12 +9,12 @@
     IMPORT FILES
 -------------------------------------------------------------------*/
 
-@import url(https://raw.githubusercontent.com/apdg21/reunion/main/css/animate.css);
-@import url(https://raw.githubusercontent.com/apdg21/reunion/main/css/font-awesome.min.css);
-@import url(https://raw.githubusercontent.com/apdg21/reunion/main/css/magnific-popup.css);
-@import url(https://raw.githubusercontent.com/apdg21/reunion/main/css/responsiveslides.css;
-@import url(https://raw.githubusercontent.com/apdg21/reunion/main/css/timeline.css);
-@import url(https://raw.githubusercontent.com/apdg21/reunion/main/css/flaticon.css);
+@import url(animate.css);
+@import url(font-awesome.min.css);
+@import url(magnific-popup.css);
+@import url(responsiveslides.css);
+@import url(timeline.css);
+@import url(flaticon.css);
 
 /*------------------------------------------------------------------
     SKELETON
