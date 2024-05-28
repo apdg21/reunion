@@ -5,11 +5,11 @@
 
 @font-face {
 font-family: "Flaticon";
-	src: url("https://cdn.shopify.com/s/files/1/0675/8904/6554/files/Flaticon.eot?v=1715148494");
-	src: url("https://cdn.shopify.com/s/files/1/0675/8904/6554/files/Flaticon.eot?v=1715148494") format("embedded-opentype"),
-	url("https://cdn.shopify.com/s/files/1/0675/8904/6554/files/Flaticon.woff?v=1715148494") format("woff"),
-	url("https://cdn.shopify.com/s/files/1/0675/8904/6554/files/Flaticon.ttf?v=1715148494") format("truetype"),
-	url("https://raw.githubusercontent.com/Jean-42/888-001/ef9320295e3988f58929110fb80676a4aef26660/fonts/Flaticon.svg") format("svg");
+	src: url("../fonts/Flaticon.eot");
+	src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/Flaticon.woff") format("woff"),
+	url("../fonts/Flaticon.ttf") format("truetype"),
+	url("../fonts/Flaticon.svg#Flaticon") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -17,7 +17,7 @@ font-family: "Flaticon";
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	@font-face {
 		font-family: "Flaticon";
-		src: url("https://raw.githubusercontent.com/Jean-42/888-001/ef9320295e3988f58929110fb80676a4aef26660/fonts/Flaticon.svg") format("svg");
+		src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
 	}
 }
 
