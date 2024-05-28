@@ -9,12 +9,12 @@
     IMPORT FILES
 -------------------------------------------------------------------*/
 
-@import url(https://cdn.shopify.com/s/files/1/0675/8904/6554/files/animate_eaeb8f63-a10e-48be-b5c8-5c04e945a2cf.css?v=1715007924);
-@import url(https://cdn.shopify.com/s/files/1/0675/8904/6554/files/font-awesome.min.css?v=1715148760);
-@import url(https://cdn.shopify.com/s/files/1/0675/8904/6554/files/magnific-popup_8f76967f-25ba-4922-8987-dd469259b637.css?v=1715007981);
-@import url(https://cdn.shopify.com/s/files/1/0675/8904/6554/files/responsiveslides.css?v=1715008018);
-@import url(https://cdn.shopify.com/s/files/1/0675/8904/6554/files/timeline.css?v=1715007717);
-@import url(https://cdn.shopify.com/s/files/1/0675/8904/6554/files/flaticon.css?v=1715149423);
+@import url(animate.css);
+@import url(font-awesome.min.css);
+@import url(magnific-popup.css);
+@import url(responsiveslides.css);
+@import url(timeline.css);
+@import url(flaticon.css);
 
 /*------------------------------------------------------------------
     SKELETON
@@ -456,7 +456,7 @@ button:focus{
 }
 
 .countdown{
-	background: url(https://raw.githubusercontent.com/Jean-42/888-001/main/images/ptn-bg.jpg);
+	background: url(../images/ptn-bg.jpg);
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -546,14 +546,14 @@ button:focus{
 	left: -100%;
 	width: 200%;
 	height: 100%;
-	background: url(https://raw.githubusercontent.com/Jean-42/888-001/ef9320295e3988f58929110fb80676a4aef26660/images/wave.svg) repeat-x center center;
+	background: url(../images/wave.svg) repeat-x center center;
 	background-size: 50% auto;
 }
 
 
 .about-box{
 	padding: 70px 0px;
-	background: url(https://raw.githubusercontent.com/Jean-42/888-001/main/images/ptn-bg.jpg);
+	background: url(../images/ptn-bg.jpg);
 }
 
 .title-box{
@@ -727,7 +727,7 @@ button:focus{
 
 .family-box{
 	padding: 70px 0px;
-	background: url(https://raw.githubusercontent.com/Jean-42/888-001/main/images/ptn-bg.jpg);
+	background: url(../images/ptn-bg.jpg);
 }
 
 .single-team-member {
@@ -781,7 +781,7 @@ button:focus{
 
 .family-info h4{
 	font-family: 'Engagement', cursive;
-	font-size: 30px;
+	font-size: 24px;
 	color: #ffffff;
 }
 .family-info p{
@@ -869,7 +869,7 @@ button:focus{
 
 .wedding-box{
 	padding: 70px 0px;
-	background: url(https://raw.githubusercontent.com/Jean-42/888-001/main/images/ptn-bg.jpg);
+	background: url(../images/ptn-bg.jpg);
 }
 
 .serviceBox{
