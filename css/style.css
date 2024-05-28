@@ -9,12 +9,12 @@
     IMPORT FILES
 -------------------------------------------------------------------*/
 
-@import url(animate.css);
-@import url(font-awesome.min.css);
-@import url(magnific-popup.css);
-@import url(responsiveslides.css);
-@import url(timeline.css);
-@import url(flaticon.css);
+@import url(css/animate.css);
+@import url(css/font-awesome.min.css);
+@import url(css/magnific-popup.css);
+@import url(css/responsiveslides.css);
+@import url(css/timeline.css);
+@import url(css/flaticon.css);
 
 /*------------------------------------------------------------------
     SKELETON
