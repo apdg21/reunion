@@ -16,6 +16,22 @@ if (empty($_POST["email"])) {
     $email = $_POST["email"];
 }
 
+// MSG Guest
+if (empty($_POST["guest"])) {
+    $errorMSG .= "Subject is required ";
+} else {
+    $guest = $_POST["guest"];
+}
+
+
+// MSG Event
+if (empty($_POST["event"])) {
+    $errorMSG .= "Subject is required ";
+} else {
+    $event = $_POST["event"];
+}
+
+
 // MESSAGE
 if (empty($_POST["message"])) {
     $errorMSG .= "Message is required ";
@@ -23,11 +39,11 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-// Recipient email address
-$EmailTo = "example@domain.com";  // Update this to your desired recipient email address
+
+$EmailTo = "dolfean214@gmail.com";
 $Subject = "New Message Received";
 
-// Prepare email body text
+// prepare email body text
 $Body = "";
 $Body .= "Name: ";
 $Body .= $name;
@@ -35,18 +51,24 @@ $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
+$Body .= "guest: ";
+$Body .= $guest;
+$Body .= "\n";
+$Body .= "event: ";
+$Body .= $event;
+$Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
 
-// Send email
+// send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
 
-// Check if email was sent successfully
+// redirect to success page
 if ($success && $errorMSG == ""){
-    echo "success";
-} else {
-    if ($errorMSG == ""){
+   echo "success";
+}else{
+    if($errorMSG == ""){
         echo "Something went wrong :(";
     } else {
         echo $errorMSG;
