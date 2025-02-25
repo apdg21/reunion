@@ -557,27 +557,27 @@
                 </div>                 
             </div>             
         </div> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(function() {
   $("#contactForm").submit(function(event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault();
 
     $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbwABrW5jw8Ai_5p7Pab4yQf3iEZKxSECgTIOi0Heki6DRLigkOG5mpLsGmrjFFb9IOMEA/exec", // **REPLACE with your Web App URL**
+      url: "YOUR_WEB_APP_URL", // **REPLACE WITH YOUR WEB APP URL**
       type: "POST",
-      data: $(this).serialize(), // Serialize the form data
+      data: $(this).serialize(),
       dataType: "json",
       success: function(response) {
         if (response.result === "success") {
-          $("#msgSubmit").html("<div class='h3 text-center alert-success'>Your message has been sent!</div>");
-          $("#contactForm")[0].reset(); // Clear the form
+          $("#msgSubmit").removeClass("hidden").html("<div class='h3 text-center alert-success'>Your message has been sent!</div>");
+          $("#contactForm")[0].reset();
         } else {
-          $("#msgSubmit").html("<div class='h3 text-center alert-danger'>An error occurred: " + response.error + "</div>");
+          $("#msgSubmit").removeClass("hidden").html("<div class='h3 text-center alert-danger'>An error occurred: " + response.error + "</div>");
         }
       },
       error: function() {
-        $("#msgSubmit").html("<div class='h3 text-center alert-danger'>An error occurred. Please try again.</div>");
+        $("#msgSubmit").removeClass("hidden").html("<div class='h3 text-center alert-danger'>An error occurred. Please try again.</div>");
       }
     });
   });
